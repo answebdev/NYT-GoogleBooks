@@ -14,7 +14,7 @@ const Home = () => {
                     <p className="lead">Welcome to NYT Google Books Search. Feel free to search for your favorite books and save them.</p>
                     <hr className="my-4" />
                     <p>Click on the Search button below to begin searching.</p>
-                    <a className="btn btn-primary btn-lg" href="/search" role="button">Search</a>
+                    <a href="/search" class="btn btn-primary"><i class="fas fa-search"></i> Search</a>
                 </div>
             </div>
         </div>
