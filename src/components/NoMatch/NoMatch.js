@@ -9,7 +9,7 @@ const NoMatch = () => {
             </Helmet>
             <br />
 
-            {/* Source: https://bootsnipp.com/snippets/eo5VD */}
+            {/* Error page source: https://bootsnipp.com/snippets/eo5VD */}
             <div class="container">
                 <div className="jumbotron">
                     <div className="text-center"><i className="far fa-frown" style={{ color: "#d9534f", fontSize: "48px" }}></i></div>
