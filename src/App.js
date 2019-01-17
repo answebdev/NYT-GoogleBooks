@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import Search from "./components/Search/Search";
 import Saved from "./components/Saved/Saved";
 import NoMatch from "./components/NoMatch/NoMatch";
+import './App.css';
 
 function App() {
   return (
