@@ -8,9 +8,14 @@ const Home = () => {
                 <title>NYT Google Books Search</title>
             </Helmet>
             <br />
-            <br />
             <div>
-                <p>Home Page</p>
+                <div className="jumbotron">
+                    <h1 className="display-4">NYT Google Books Search</h1>
+                    <p className="lead">Welcome to NYT Google Books Search. Feel free to search for your favorite books and save them.</p>
+                    <hr className="my-4" />
+                    <p>Click on the Search button below to begin searching.</p>
+                    <a className="btn btn-primary btn-lg" href="/search" role="button">Search</a>
+                </div>
             </div>
         </div>
     );

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import Detail from "./pages/Detail";
 // import NoMatch from "./pages/NoMatch";
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import Home from "./components/Home/Home";
 import Search from "./components/Search/Search";
 import Saved from "./components/Saved/Saved";
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/books/:id" component={Saved} /> */}
           <Route component={NoMatch} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
