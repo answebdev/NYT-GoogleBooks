@@ -1,23 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import Books from "./pages/Books";
+// import Detail from "./pages/Detail";
+// import NoMatch from "./pages/NoMatch";
+import Navbar from './components/Navbar/Navbar';
+import Home from "./components/Home/Home";
+import Search from "./components/Search/Search";
+import Saved from "./components/Saved/Saved";
+import NoMatch from "./components/NoMatch/NoMatch";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>
-            NYT Google Books Search
-          </h1>
-          <p>
-            See activity 11, 20-react folder for reference
-          </p>
-        </header>
+function App() {
+  return (
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/search" component={Search} />
+          <Route exact path="/saved" component={Saved} />
+          {/* <Route exact path="/books" component={Search} />
+          <Route exact path="/books/:id" component={Saved} /> */}
+          <Route component={NoMatch} />
+        </Switch>
       </div>
-    );
-  }
+    </Router>
+  );
 }
 
 export default App;
